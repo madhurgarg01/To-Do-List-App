@@ -1,0 +1,51 @@
+/* src/components/TaskForm/TaskForm.module.css */
+.taskForm {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-unit) * 2);
+  padding: calc(var(--spacing-unit) * 2);
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  margin-bottom: calc(var(--spacing-unit) * 2);
+  box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.taskForm h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-unit);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-unit);
+}
+
+.formGroup label {
+  font-weight: bold;
+  color: var(--text-secondary);
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="date"],
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: calc(var(--spacing-unit) * 1.5);
+}
+
+.formGroup textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.submitButton {
+  padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 2);
+  font-size: 1.1rem;
+  transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+.submitButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}

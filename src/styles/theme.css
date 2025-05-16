@@ -1,0 +1,29 @@
+/* src/styles/theme.css */
+:root {
+  --primary-bg: #1a1a2e; /* Darker space blue */
+  --secondary-bg: #16213e; /* Deep indigo */
+  --card-bg: #0f3460; /* Rich blue */
+  --accent-color: #e94560; /* Vibrant coral/pink */
+  --accent-hover: #f0667c;
+
+  --text-primary: #e0e0e0; /* Off-white for main text */
+  --text-secondary: #a0a0c0; /* Lighter purple/gray for secondary text */
+  --text-placeholder: #7b7f9e;
+
+  --priority-high: #ff6b6b; /* Red */
+  --priority-medium: #f9cb40; /* Yellow */
+  --priority-low: #50fa7b; /* Green */
+
+  --border-color: #5372f0; /* A contrasting blue for borders */
+  --shadow-color: rgba(0, 0, 0, 0.25);
+  --success-color: #4caf50;
+  --error-color: #f44336;
+
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --border-radius: 8px;
+  --spacing-unit: 8px;
+  --transition-speed: 0.3s;
+
+  /* Animations */
+  --hover-scale: 1.03;
+}

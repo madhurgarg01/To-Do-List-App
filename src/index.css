@@ -1,0 +1,66 @@
+/* src/index.css */
+@import './styles/theme.css';
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  padding: calc(var(--spacing-unit) * 2);
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: calc(var(--spacing-unit) * 1.25);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  background-color: var(--secondary-bg);
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+button:hover, input:hover, select:hover, textarea:hover {
+  border-color: var(--accent-color);
+}
+
+button:focus, input:focus, select:focus, textarea:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(var(--accent-color-rgb, 233, 69, 96), 0.3); /* Add accent-color-rgb if needed */
+}
+
+
+button {
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--accent-hover);
+}
+
+h1, h2, h3 {
+  color: var(--accent-color);
+  margin-bottom: var(--spacing-unit);
+}

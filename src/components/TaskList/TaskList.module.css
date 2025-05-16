@@ -1,0 +1,21 @@
+/* src/components/TaskList/TaskList.module.css */
+.taskList {
+  list-style: none;
+  padding: 0;
+  margin-top: calc(var(--spacing-unit) * 2);
+}
+
+.taskList h2 {
+  margin-bottom: var(--spacing-unit);
+  padding-bottom: var(--spacing-unit);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.emptyMessage {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: calc(var(--spacing-unit) * 3);
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  border: 1px dashed var(--border-color);
+}
